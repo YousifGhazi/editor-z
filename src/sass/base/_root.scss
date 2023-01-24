@@ -1,0 +1,16 @@
+@use "../abstracts/index" as *;
+
+:root {
+  --bg-clr: #1e2028;
+  --fg-clr: #17191e;
+  --accent-clr: #45a9df;
+  --upload-clr: #9c9c9c;
+  --reset-clr: #9c9c9c;
+  --h-clr: white;
+  --text-clr: #dde1e4;
+  --section-space: 1rem;
+
+  @include min-breakpoints(small) {
+    --section-space: 2rem;
+  }
+}

@@ -1,0 +1,53 @@
+@use "../abstracts/index" as *;
+
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: var(--section-space);
+
+  @include min-breakpoints(medium) {
+    flex-grow: 1;
+  }
+
+  img {
+    max-height: 80vh;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+  }
+
+  .upload-download {
+    display: flex;
+    margin: 3rem 0 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    @include min-breakpoints(medium) {
+      align-self: end;
+      gap: 2rem;
+    }
+
+    .upload {
+      label {
+        background-color: var(--upload-clr);
+      }
+
+      #upload {
+        display: none;
+      }
+    }
+
+    .download {
+      #download-btn {
+        text-decoration: none;
+        background-color: var(--accent-clr);
+      }
+    }
+
+    #canvas {
+      display: none;
+    }
+  }
+}

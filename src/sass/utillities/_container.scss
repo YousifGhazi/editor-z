@@ -1,0 +1,10 @@
+@use "../abstracts/index" as *;
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+}

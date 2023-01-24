@@ -1,0 +1,12 @@
+@use "../abstracts/index" as *;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg-clr);
+
+  @include min-breakpoints(medium) {
+    flex-direction: row;
+  }
+}

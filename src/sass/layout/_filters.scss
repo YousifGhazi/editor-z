@@ -1,0 +1,51 @@
+@use "../abstracts/index" as *;
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding: var(--section-space);
+  background-color: var(--fg-clr);
+
+  @include min-breakpoints(medium) {
+    flex-grow: 0;
+  }
+
+  div {
+    .title {
+      margin-bottom: 1.5rem;
+      font-size: 2.25rem;
+      color: var(--h-clr);
+    }
+
+    .sliders {
+      .slider {
+        margin-bottom: var(--section-space);
+
+        .filter {
+          display: block;
+          margin-bottom: 0.25rem;
+          font-size: 1rem;
+          text-transform: capitalize;
+          color: var(--text-clr);
+          user-select: none;
+        }
+
+        .filter-range {
+          width: 60vw;
+          accent-color: var(--accent-clr);
+
+          @include min-breakpoints(medium) {
+            max-width: 280px;
+          }
+        }
+      }
+    }
+
+    #reset-btn {
+      margin-top: 1rem;
+      background-color: var(--reset-clr);
+    }
+  }
+}
