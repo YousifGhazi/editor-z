@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/editor-z/static/css/main.69c66315.css",
+    "main.js": "/editor-z/static/js/main.9dc5a0d7.js",
+    "static/media/default-image.png": "/editor-z/static/media/default-image.37ae74e55c44e3070712.png",
+    "index.html": "/editor-z/index.html",
+    "main.69c66315.css.map": "/editor-z/static/css/main.69c66315.css.map",
+    "main.9dc5a0d7.js.map": "/editor-z/static/js/main.9dc5a0d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69c66315.css",
+    "static/js/main.9dc5a0d7.js"
+  ]
+}
